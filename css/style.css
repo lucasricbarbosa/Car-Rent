@@ -5,6 +5,11 @@
     --light-color: #666;
     --border: .1rem solid rgba(0,0,0,.1);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --facebook-color: #4267B2;
+    --google-colors-blue: #4285F4;
+    --google-colors-red: #DB4437;
+    --google-colors-yellow: #F4B400;
+    --google-colors-green: #0F9D58;
 }
 
 * {
@@ -141,6 +146,43 @@ section {
     display: block;
     width: 100%;
     margin: .5rem 0;
+}
+
+.btn-facebook {
+    background: var(--facebook-color);
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid var(--facebook-color);
+}
+
+.btn-facebook:hover {
+    color: var(--facebook-color);
+    background: lightgray;
+}
+
+.btn-google {
+    background: #fff;
+    border: 1px solid #dedddd;
+}
+
+.btn-google:hover {
+    background: #e5e3e3;
+}
+
+.google-g {
+    color: var(--google-colors-blue);
+}
+
+.google-o, .google-e {
+    color: var(--google-colors-red);
+}
+
+.google-oo {
+    color: var(--google-colors-yellow);
+}
+
+.google-l {
+    color: var(--google-colors-green);
 }
 
 .login-form-container form h3 {

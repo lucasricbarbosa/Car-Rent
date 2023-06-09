@@ -78,3 +78,23 @@ var swiper = new Swiper(".featured-slider", {
         },
     },
 });
+
+var smallImage = './assets/home-cars-small.png';
+var normalImage = './assets/home-image.png';
+
+var image;
+
+var larguraJanela = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+if (larguraJanela <= 768) {
+  image = smallImage;
+} else if (larguraJanela > 768) {
+    image = normalImage;
+} else {
+    image = normalImage;
+}
+
+var imageElement = document.querySelector('#home-image');
+imageElement.src = image;

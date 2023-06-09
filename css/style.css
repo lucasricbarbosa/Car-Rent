@@ -383,6 +383,158 @@ section {
     background-color: var(--black);
 }
 
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.services .box-container .box i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    background: yellow;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+}
+
+.services .box-container .box p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.services .box-container .box:hover {
+    background: var(--black);
+}
+
+.services .box-container .box:hover h3{
+    color: #fff;
+}
+
+.services .box-container .box:hover p{
+    color: #eee;
+}
+
+.featured .featured-slider {
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.featured .featured-slider .box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.featured .featured-slider .box img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.featured .featured-slider .box:hover img {
+    transform: scale(.9);
+}
+
+.featured .featured-slider .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.featured .featured-slider .box .stars {
+    padding: 1rem 0;
+}
+
+.featured .featured-slider .box .stars i {
+    font-size: 1.7rem;
+    color: yellow;
+}
+
+.featured .featured-slider .box .price {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.newsletter {
+    padding: 9rem 2rem;
+    text-align: center;
+    background: url(../assets/car-on-the-road.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0.9;
+}
+
+.newsletter h3 {
+    margin-left: 5rem;
+    color: #070422;
+    font-size: 3.5rem;
+    opacity: 1;
+}
+
+.newsletter p {
+    margin-left: 5rem;
+    color: white;
+    font-size: 1.7rem;
+    opacity: 1;
+    padding: 1rem 0;
+}
+
+.newsletter form {
+    margin-top: 1rem;
+    max-width: 50rem;
+    height: 5rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border-radius: 5rem;
+    display: flex;
+}
+
+.newsletter form input[type="email"] {
+    height: 100%;
+    width: 90%;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 0 2rem;
+}
+
+.newsletter form input[type="submit"] {
+    height: 100%;
+    width: 17rem;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.newsletter form input[type="submit"]:hover {
+    color: var(--black);
+    background-color: #9b9595;
+    font-weight: 600;
+}
+
+
 
 
 
@@ -418,6 +570,22 @@ section {
 
     section {
         padding: 2rem;
+    }
+
+    .services .box-container .box:hover, .icons-container .icons:hover {
+        background: #fff;
+    }
+    
+    .services .box-container .box:hover h3{
+        color: var(--black);
+    }
+    
+    .services .box-container .box:hover p, .icons-container .icons:hover .content p{
+        color: var(--black);
+    }
+    
+    .icons-container .icons:hover .content h3 {
+        color: var(--yellow);
     }
 }
 
@@ -457,6 +625,31 @@ section {
         display: block;
         margin: 2rem;
         font-size: 2rem;
+    }
+
+    .newsletter {
+        padding: 9rem 2rem;
+        text-align: center;
+        background: url(../assets/teste-car.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+    }
+
+    .newsletter h3 {
+        color: var(--yellow);
+        margin: 0;
+        font-size: 4.3rem;
+    }
+
+    .newsletter p {
+        color: white;
+        font-size: 2.2rem;
+        margin: 0;
     }
     
 }

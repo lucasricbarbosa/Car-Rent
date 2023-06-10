@@ -542,16 +542,134 @@ section {
     padding: 2rem;
     margin: 2rem 0;
     text-align: center;
-    /* opacity: .4;
-    transform: scale(.9); */
+    opacity: .6;
+    transform: scale(.9);
+}
+
+.reviews .reviews-slider .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
 }
 
 .reviews .reviews-slider .box img {
-    height: 9rem;
-    width: 9rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+.reviews .reviews-slider .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    padding-bottom: .5rem;
+    margin: 0 5rem;
+}
+
+.reviews .reviews-slider .box .content h3 {
+    font-size: 2.1rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.reviews .reviews-slider .box .content i {
+    font-size: 1.5rem;
+    color: var(--yellow);
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .map {
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.contact .row form {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.contact .row form h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.contact .row form .box {
+    margin: .7rem 0;
+    width: 100%;
+    border: var(--border);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.footer {
+    background-color: var(--light-yellow);
+    padding-left: 6%;
+    padding-top: 3rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: var(--border);
+    padding: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+
+
 
 
 

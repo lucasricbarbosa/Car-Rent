@@ -660,12 +660,15 @@ section {
 
 .footer .credit {
     text-align: center;
-    border-top: var(--border);
     padding: 1rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     margin-top: 2rem;
     font-size: 2rem;
+}
+
+#email-fix {
+    text-transform: none;
 }
 
 
